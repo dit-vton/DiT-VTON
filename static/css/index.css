@@ -29,6 +29,7 @@ body {
 
 
 .publication-title {
+  white-space: nowrap;
 }
 
 .publication-banner {
@@ -80,12 +81,16 @@ body {
 
 .author-block {
   display: inline-block;
+  margin-bottom: 16px;
+  margin-right: 10px;
 }
 
 .publication-banner img {
 }
 
 .publication-authors {
+  line-height: 1.6;
+  margin-bottom: 16px;
   /*color: #4286f4;*/
 }
 
@@ -127,31 +132,8 @@ body {
   margin: 0;
 }
 
-
-.interpolation-panel {
-  background: #f5f5f5;
-  border-radius: 10px;
-}
-
-.interpolation-panel .interpolation-image {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.interpolation-video-column {
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-#interpolation-image-wrapper {
-  width: 100%;
-}
-#interpolation-image-wrapper img {
-  border-radius: 5px;
+video {
+  width: 800px; /* Example: Set a fixed width */
+  height: 450px; /* Example: Set a fixed height to maintain 16:9 aspect ratio */
+  object-fit: contain; /* Maintain the video's aspect ratio */
 }
