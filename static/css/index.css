@@ -29,7 +29,7 @@ body {
 
 
 .publication-title {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .publication-banner {
