@@ -133,7 +133,12 @@ body {
 }
 
 video {
-  width: 1500px; /* Example: Set a fixed width */
-  height:250px; /* Example: Set a fixed height to maintain 16:9 aspect ratio */
+  width: 500px; /* Example: Set a fixed width */
+  height:300px; /* Example: Set a fixed height to maintain 16:9 aspect ratio */
   object-fit: contain; /* Maintain the video's aspect ratio */
+}
+
+.subtitle {
+  font-size: 26px;
+  margin-top: 30px;
 }

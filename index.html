@@ -64,13 +64,13 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="">
-            Consistency Training for Virtual Try-On
+            Consistency Training for Virtual Try-On (Upcoming)
           </a>
           <a class="navbar-item" href="">
-            InstructVTON
+            Is concatenation really all you need for pose-conditioning and pose control (Upcoming)
           </a>
           <a class="navbar-item" href="">
-            Is concatenation really all you need
+            InstructVTON (Upcoming)
           </a>
         </div>
       </div>
@@ -162,11 +162,28 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
 
+        <!-- Zero Video -->
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/vto_in_the_wild.mp4" type="video/mp4">
+          </video>
+          <br>
+          <h2 class="subtitle">
+            <span class="dnerf"></span> Vritual Try-On on in-the-wild examples. High quality detail preservations, and agnostic to background of reference image and resolutions
+          </h2>
+          <br>
+        </div>
+
         <!-- First Video -->
         <div class="item item-chair-tp">
             <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/cartoon_1.mp4" type="video/mp4">
+              <source src="./static/videos/vto_multi_garment.mp4" type="video/mp4">
             </video>
+            <br>
+            <h2 class="subtitle has-text-centered">
+              <span class="dnerf"></span> Multi-Garments, and Mask Control
+            </h2>
+            <br>
         </div>
 
         <!-- Second Video -->
@@ -174,6 +191,11 @@
             <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/furniture_all.mp4" type="video/mp4">
             </video>
+            <br>
+            <h2 class="subtitle has-text-centered">
+              <span class="dnerf"></span> Furnitures Try-On
+            </h2>
+            <br>
         </div>
 
         <!-- Third Video -->
@@ -181,6 +203,11 @@
             <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/style_transfer_all.mp4" type="video/mp4">
             </video>
+            <br>
+            <h2 class="subtitle has-text-centered">
+              <span class="dnerf"></span> Texture Transfer
+            </h2>
+            <br>
         </div>
 
         <!-- Fourth Video -->
@@ -188,14 +215,24 @@
             <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/local_editing_1.mp4" type="video/mp4">
             </video>
+            <br>
+            <h2 class="subtitle has-text-centered">
+              <span class="dnerf"></span> Localized region editing and refinement
+            </h2>
+            <br>
         </div>
 
           <!-- Fifth Video -->
           <div class="item item-mask">
             <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vto_2.mp4" type="video/mp4">
+              <source src="./static/videos/vit_all.mp4" type="video/mp4">
             </video>
-        </div>
+            <br>
+            <h2 class="subtitle has-text-centered">
+              <span class="dnerf"></span> Virtual Try-All for Non-Garment categories
+            </h2>
+            <br>
+          </div>
       </div>
     </div>
   </div>
@@ -238,6 +275,18 @@
   </div>
 </section>
 
+  <!-- Re-rendering. -->
+  <div class="content has-text-justified">
+  </div>
+  <div class="content has-text-centered">
+    <img src="./static/videos/pose_control.gif" alt="Pose Control" width="50%" height="auto">
+  </div>
+  <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -273,7 +322,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
+    <pre><code>@article{DiT-VTON,
   author    = {Shuwen Qiu, Qi Li, Amir Tavanaei, Julien Han, Kee Kiat Koo, Karim Bouyarmane},
   title     = {DiT-VTON: Diffusion Transformer Virtual Try On},
   year      = {2024},
