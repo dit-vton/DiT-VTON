@@ -88,9 +88,9 @@
           <h1 class="title is-1 publication-title">DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Shuwen Qiu</a><sup>1</sup>,</span>
+              <a href="">Shuwen Qiu</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="">Qi Li</a><sup>2</sup>,</span>
+              <a href="">Qi Li</a><sup>2*</sup>,</span>
             <span class="author-block">
               <a href="">Amir Tavanaei</a><sup>2</sup>,
             </span>
@@ -105,9 +105,12 @@
             </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors" style="margin-bottom: 1px;">
             <span class="author-block"><sup>1</sup>University of California, Los Angeles. Work done during internship at Amazon</a>&nbsp   </a>&nbsp  </span>
             <span class="author-block"><sup>2</sup>Amazon</a>&nbsp</a>&nbsp  </span>
+          </div>
+          <div class="is-size-6 has-text-centered" style="margin-top: 1px;">
+            <sup>*</sup> Equal Contribution
           </div>
 
           <div class="column has-text-centered">
@@ -275,10 +278,27 @@
     <!--/ Abstract. -->
   </div>
 </section>
+  <!-- Key Contributions. -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3" style="text-align: center;">Key Contributions</h2>
+      <div class="content has-text-justified">
+        <ul>
+          <li><b>First to introduce Virtual Try-All (VTA):</b> Expanding virtual try-on beyond garments to a wide range of product categories, including furniture, jewelry, shoes, and accessories, etc.</li>
+          <li><b>Diffusion Transformer-based VTO:</b> Leveraging DiT for high-fidelity, image-conditioned virtual try-on with superior detail preservation.</li>
+          <li><b>Multi-Garment Try-On:</b> Allows seamless try-on of multiple garments simultaneously while maintaining realistic composition.</li>
+          <li><b>Local Editing:</b> Enables precise image customization, including logo refinement and pattern modification, for enhanced personalization.</li>
+          <li><b>Texture and Style Transfer:</b> Accurately transfers styles and textures from reference images, enabling a more flexible and realistic try-on experience.</li>
+          <li><b>Scalable Training with Diverse Data:</b> Trained on a large-scale dataset with complex backgrounds and varied product types, ensuring robustness across diverse real-world images, including anime, real-world photos, and images with or without complex backgrounds.</li>
+          <li><b>Advanced Pose Control and Pose-Oriented Generation:</b> Supports pose-preserving transformations and pose-guided image generation without adding extra model components or parameters. Fine more details in our researech paper <a href="https://pose-vton.github.io/vto-pose-conditioning/" target="_blank"> "Is Concatenation Really All You Need: Efficient Concatenation-Based Pose Conditioning and Pose Control for Virtual Try On"</li>
+          </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- Re-rendering. -->
   <div class="content has-text-centered">
-    <img src="./static/videos/pose_control.gif" alt="Pose Control" width="50%" height="auto">
+    <img src="./static/videos/pose_control.gif" alt="Pose Control" width="45%" height="45%">
   </div>
   <!--/ Re-rendering. -->
 
@@ -319,7 +339,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{DiT-VTON,
   author    = {Shuwen Qiu, Qi Li, Amir Tavanaei, Julien Han, Kee Kiat Koo, Karim Bouyarmane},
-  title     = {DiT-VTON: Diffusion Transformer Virtual Try On},
+  title     = {DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization},
   year      = {2024},
 }</code></pre>
   </div>
