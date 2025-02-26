@@ -85,33 +85,38 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization</h1>
+          <h1 class="title is-1 publication-title">DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Shuwen Qiu</a><sup>1*</sup>,</span>
+              <a href="">Qi Li</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="">Qi Li</a><sup>2*</sup>,</span>
+              <a href="">Shuwen Qiu</a><sup>2*</sup>,</span>
             <span class="author-block">
-              <a href="">Amir Tavanaei</a><sup>2</sup>,
+              <a href="">Julien Han</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Julien Han</a><sup>2</sup>,
+              <a href="">Kee Kiat Koo</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Kee Kiat Koo</a><sup>2</sup>,
+              <a href="">Mehmet Saygin Seyfioglu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Karim Bouyarmane</a><sup>2</sup>,
+              <a href="">Karim Bouyarmane</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors" style="margin-bottom: 1px;">
-            <span class="author-block"><sup>1</sup>University of California, Los Angeles. Work done during internship at Amazon</a>&nbsp   </a>&nbsp  </span>
-            <span class="author-block"><sup>2</sup>Amazon</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>1</sup>Amazon</a>&nbsp   </a>&nbsp  </span>
+            <br>
+            <span class="author-block"><sup>2</sup>
+                <span style="font-size: 0.7em;">
+                  University of California, Los Angeles. Work done during internship at Amazon &nbsp;&nbsp; <sup>*</sup> Equal Contribution
+                </span></a>&nbsp</a>&nbsp  
+              </span>
           </div>
-          <div class="is-size-6 has-text-centered" style="margin-top: 1px;">
+          <!-- <div class="is-size-6 has-text-centered" style="margin-top: 1px;">
             <sup>*</sup> Equal Contribution
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -134,6 +139,16 @@
                   <span>arXiv</span>
                 </a>
               </span>
+              <span class="link-block">
+                <a href="./static/videos/end_to_end.m4v" 
+                   class="external-link button is-normal is-rounded is-dark"
+                   download>
+                    <span class="icon">
+                        <i class="fas fa-download"></i>
+                    </span>
+                    <span>Video</span>
+                </a>
+            </span>
             </div>
           </div>
         </div>
@@ -285,18 +300,18 @@
       <div class="content has-text-justified">
         <ul>
           <li><b>Virtual Try-All (VTA) Capability:</b> Expanding virtual try-on beyond garments to a wide range of product categories, including furniture, jewelry, shoes, and accessories, etc.</li>
-            <div class="image-area" style="margin: 15px 0;">
+            <!-- <div class="image-area" style="margin: 15px 0;">
               <img src="./static/images/vit_all.png" alt="More VTA Examples" width="100%" height="100%">
-            </div>
+            </div> -->
           <li><b>Diffusion Transformer-based VTO:</b> Leveraging DiT for high-fidelity, image-conditioned virtual try-on with superior detail preservation.</li>
-            <div class="image-area" style="margin: 15px 0;">
+            <!-- <div class="image-area" style="margin: 15px 0;">
               <img src="./static/images/more_vto_example.png" alt="More VTO Examples" width="100%" height="100%">
-            </div>
+            </div> -->
           <li><b>Multi-Garment Try-On:</b> Allows seamless try-on of multiple garments simultaneously while maintaining realistic composition.</li>
           <li><b>Local Editing:</b> Enables precise image customization, including logo refinement and pattern modification, for enhanced personalization.</li>
-            <div class="image-area" style="margin: 15px 0;">
+            <!-- <div class="image-area" style="margin: 15px 0;">
               <img src="./static/images/image_customization.png" alt="Image Customization Example" width="100%" height="100%">
-            </div>
+            </div> -->
           <li><b>Texture and Style Transfer:</b> Accurately transfers styles and textures from reference images, enabling a more flexible and realistic try-on experience.</li>
           <li><b>Advanced Pose Control and Pose-Oriented Generation:</b> Supports pose-preserving transformations and pose-guided image generation without adding extra model components or parameters. Find more details in our research paper <a href="https://pose-vton.github.io/vto-pose-conditioning/" target="_blank">"Is Concatenation Really All You Need: Efficient Concatenation-Based Pose Conditioning and Pose Control for Virtual Try-On"</a>.</li>
         </ul>
@@ -318,7 +333,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3" style="text-align: center;">Overall Pipeline</h2>
         <div class="image-area">
-          <img src="./static/images/model2.png" alt="Overall Pipeline" width="100%">
+          <img src="./static/images/model2_arxiv.png" alt="Overall Pipeline" width="100%">
         </div>
         <div class="content has-text-centered">
           <p>
@@ -345,9 +360,9 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{DiT-VTON,
+    <pre><code>@article{DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing,
   author    = {Shuwen Qiu, Qi Li, Amir Tavanaei, Julien Han, Kee Kiat Koo, Karim Bouyarmane},
-  title     = {DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization},
+  title     = {DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing},
   year      = {2024},
 }</code></pre>
   </div>
