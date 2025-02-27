@@ -1,2 +1,2 @@
 # DiT-VTON
-DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization
+DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing
