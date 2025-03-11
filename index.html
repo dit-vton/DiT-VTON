@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization.">
+        content="DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing.">
   <meta name="keywords" content="Virtual Try-On, Diffusion Transformer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DiT-VTON: Exploring Diffusion Transformer Framework for Multi-Category Virtual Try-On with Integrated Image Customization</title>
+  <title>DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -96,9 +96,6 @@
             </span>
             <span class="author-block">
               <a href="">Kee Kiat Koo</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Mehmet Saygin Seyfioglu</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="">Karim Bouyarmane</a><sup>1</sup>
@@ -266,26 +263,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The rapid growth of e-commerce has intensified the demand
-            for Virtual Try-On (VTO) technologies, enabling customers
-            to realistically visualize products overlaid on their own images. Despite advances, existing VTO models face challenges with fine-grained detail preservation, robustness to
-            real-world imagery, efficient sampling, image editing capabilities, and generalization across diverse product types.
-            In this paper, we present DiT-VTON, a novel VTO framework that leverages the Diffusion Transformer (DiT)-based
-            text-to-image (T2I) model, renowned for high-fidelity image generation, adapted here for the image-conditioned
-            VTO task. We systematically explore multiple DiT configurations, including in-context token concatenation, channel concatenation, and ControlNet integration, to determine
-            the optimal setup for VTO. Our findings indicate that token concatenation combined with pose stitching yields the
-            best performance. To enhance robustness, we train the
-            model on an expanded dataset encompassing varied backgrounds, unstructured references, and non-garment categories, demonstrating the benefits of data scaling for VTO
-            adaptability. For the first time, DiT-VTON redefines the
-            VTO task beyond garment try-on, offering a versatile Virtual Try-All (VTA) solution capable of handling a wide
-            range of product types and supporting advanced image
-            editing functionalities, such as pose preservation, precise
-            localized region editing and refinement, texture transfer
-            and object-level customization. Experimental results show
-            that our model surpasses state-of-the-art methods on public datasets VITON-HD and DressCode, achieving superior
-            detail preservation and robustness without reliance on external condition encoders. Additionally, DiT-VTON leverages rectified flow for faster inference and can be adapted
-            to any pretrained T2I model across datasets of varying resolutions. This work significantly advances VTO applicability
-            in diverse real-world scenarios, enhancing both the realism
+            The rapid growth of e-commerce has intensified the demand for Virtual Try-On (VTO) technologies, enabling customers to realistically visualize products overlaid on their own images. Despite recent advances, existing VTO models face challenges with fine-grained detail preservation, robustness to real-world imagery, efficient sampling, image editing capabilities, and generalization across diverse product categories. In this paper, we present DiT-VTON, a novel VTO framework that leverages an architecture based on a Diffusion Transformer (DiT), renowned for its performance on text-conditioned image generation (text-to-image), adapted here for the image-conditioned VTO task. We systematically explore multiple DiT configurations, including in-context token concatenation, channel concatenation, and ControlNet integration, to determine the best setup for VTO image conditioning. Our findings indicate that token concatenation combined with pose stitching yields the best performance. To enhance robustness, we train the model on an expanded dataset encompassing varied backgrounds, unstructured references, and non-garment categories, demonstrating the benefits of data scaling for VTO adaptability. DiT-VTON also redefines the VTO task beyond garment try-on, offering a versatile Virtual Try-All (VTA) solution capable of handling a wide range of product categories and supporting advanced image editing functionalities, such as pose preservation, precise localized region editing and refinement, texture transfer and object-level customization. Experimental results show that our model surpasses state-of-the-art methods on public datasets VITON-HD and DressCode on the VTO task, achieving superior detail preservation and robustness without reliance on additional image condition encoders. It also surpasses state-of-the-art models that have VTA and image editing capabilities on a varied dataset composed of thousands of product categories. As a result, DiT-VTON significantly advances VTO applicability in diverse real-world scenarios, enhancing both the realism and personalization of online shopping experiences. 
           </p>
         </div>
       </div>
@@ -361,7 +339,7 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing,
-  author    = {Shuwen Qiu, Qi Li, Julien Han, Kee Kiat Koo, Mehmet Saygin Seyfioglu, Karim Bouyarmane},
+  author    = {Qi Li, Shuwen Qiu, Julien Han, Kee Kiat Koo, Karim Bouyarmane},
   title     = {DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing},
   year      = {2024},
 }</code></pre>
